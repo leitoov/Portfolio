@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leonel Vincent - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-fadeInUp {
+      animation: fadeInUp 0.8s ease-out;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-purple-100 to-white text-gray-900 font-sans">
+
+  <!-- Header Responsive -->
+  <header class="bg-white shadow-md p-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between">
+      <div class="text-center md:text-left mb-4 md:mb-0">
+        <h1 class="text-2xl font-bold text-purple-800">Leonel Vincent</h1>
+        <p class="text-sm text-gray-600">Full Stack Developer</p>
+      </div>
+      <nav class="flex flex-wrap justify-center gap-4 text-sm">
+        <a href="#experiencia" class="text-purple-600 hover:underline">Experiencia</a>
+        <a href="#educacion" class="text-purple-600 hover:underline">Educación</a>
+        <a href="#tecnologias" class="text-purple-600 hover:underline">Tecnologías</a>
+        <a href="#contacto" class="text-purple-600 hover:underline">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sobre mí -->
+  <section class="max-w-6xl mx-auto px-6 py-12 animate-fadeInUp">
+    <div class="bg-white shadow-lg rounded-2xl p-6 md:p-10">
+      <h2 class="text-2xl font-semibold mb-4 text-purple-800">Sobre mí</h2>
+      <p>
+        Soy un programador full stack resolutivo y proactivo, con foco en la reutilización de código, optimización de procesos y trabajo en equipo.
+        Integro herramientas de inteligencia artificial para agilizar procesos y acelerar tiempos de desarrollo, manteniendo siempre orden, documentación y calidad en cada proyecto.
+        También tengo experiencia en diseño UI/UX y prototipado con Figma, buscando siempre mejorar la experiencia de usuario en cada producto.
+      </p>
+    </div>
+  </section>
+
+  <!-- Experiencia (Timeline Centered) -->
+  <section id="experiencia" class="py-16 px-6 bg-white animate-fadeInUp">
+    <h2 class="text-2xl font-semibold mb-12 text-center text-purple-800">Experiencia Laboral</h2>
+    <div class="relative max-w-4xl mx-auto">
+      <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-purple-500"></div>
+      <div class="space-y-12">
+        <div class="relative w-full md:w-1/2 md:ml-auto pl-10 md:pl-16">
+          <div class="bg-purple-50 p-6 rounded-lg shadow-md">
+            <h3 class="text-lg font-bold">Famiq</h3>
+            <p class="text-sm text-gray-600">03/2023 - Actualidad</p>
+            <p class="mt-2 text-sm">Vue 2/3, Laravel 8, SAP. Desarrollo de e-commerce y microservicios, migración de Twig a Vue, categorización de errores en Redmine.</p>
+          </div>
+        </div>
+        <div class="relative w-full md:w-1/2 md:mr-auto pl-10 md:pl-16">
+          <div class="bg-purple-50 p-6 rounded-lg shadow-md mr-10">
+            <h3 class="text-lg font-bold">Satoshitango</h3>
+            <p class="text-sm text-gray-600">05/2021 – 03/2023</p>
+            <p class="mt-2 text-sm">Angular, Ionic, Laravel. Desarrollo de wallet y primera tarjeta cripto del país. Landings multidioma con Next.js.</p>
+          </div>
+        </div>
+        <div class="relative w-full md:w-1/2 md:ml-auto pl-10 md:pl-16">
+          <div class="bg-purple-50 p-6 rounded-lg shadow-md">
+            <h3 class="text-lg font-bold">Solventa</h3>
+            <p class="text-sm text-gray-600">08/2020 – 05/2021</p>
+            <p class="mt-2 text-sm">PHP (Yii). Sistema de control para call centers con métricas en tiempo real a nivel internacional.</p>
+          </div>
+        </div>
+        <div class="relative w-full md:w-1/2 md:mr-auto pl-10 md:pl-16">
+          <div class="bg-purple-50 p-6 rounded-lg shadow-md mr-10">
+            <h3 class="text-lg font-bold">Sysworld</h3>
+            <p class="text-sm text-gray-600">07/2019 – 08/2020</p>
+            <p class="mt-2 text-sm">Angular, Ionic, React. Desarrollo web/mobile para Toyota y Banco Coinag. Automatización de mails y mantenimiento de sistemas legados.</p>
+          </div>
+        </div>
+        <div class="relative w-full md:w-1/2 md:ml-auto pl-10 md:pl-16">
+          <div class="bg-purple-50 p-6 rounded-lg shadow-md">
+            <h3 class="text-lg font-bold">Impulso360</h3>
+            <p class="text-sm text-gray-600">03/2018 – 07/2019</p>
+            <p class="mt-2 text-sm">WordPress, PHP, JS. Desarrollo de sitios y apps híbridas con soluciones personalizadas para pymes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Educación y Cursos -->
+  <section id="educacion" class="max-w-6xl mx-auto px-6 py-12 animate-fadeInUp">
+    <div class="bg-white shadow-lg rounded-2xl p-6 md:p-10">
+      <h2 class="text-2xl font-semibold mb-4 text-purple-800">Educación y Certificaciones</h2>
+      <ul class="list-disc ml-6 space-y-2 text-sm">
+        <li>Técnico en Programación - E.S.E.T N°2 (2010 – 2017)</li>
+        <li>UTN - Desarrollo en Angular (proyecto e-commerce)</li>
+        <li>UTN - Desarrollo Full Stack con APIs</li>
+        <li>UTN - React con aplicación práctica</li>
+        <li>Curso Diseño UX/UI - Programadores</li>
+        <li>Curso de Neurociencia y Feedback</li>
+        <li>Curso de UX Writing</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Tecnologías -->
+  <section id="tecnologias" class="py-12 px-6 bg-purple-50 animate-fadeInUp">
+    <h2 class="text-2xl font-semibold text-center mb-8 text-purple-800">Tecnologías</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto text-center text-sm">
+      <div class="bg-white rounded-lg shadow p-4">PHP (Laravel, Yii)</div>
+      <div class="bg-white rounded-lg shadow p-4">Vue 2/3</div>
+      <div class="bg-white rounded-lg shadow p-4">Angular, Ionic</div>
+      <div class="bg-white rounded-lg shadow p-4">React, Next.js</div>
+      <div class="bg-white rounded-lg shadow p-4">MySQL, MariaDB</div>
+      <div class="bg-white rounded-lg shadow p-4">SAP vía XML</div>
+      <div class="bg-white rounded-lg shadow p-4">Redmine, Docker</div>
+      <div class="bg-white rounded-lg shadow p-4">HTML5, CSS3, JS</div>
+      <div class="bg-white rounded-lg shadow p-4">Tailwind, Bootstrap</div>
+      <div class="bg-white rounded-lg shadow p-4">Figma, UI/UX</div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="max-w-6xl mx-auto px-6 py-12 animate-fadeInUp">
+    <div class="bg-white shadow-lg rounded-2xl p-6 md:p-10 text-sm">
+      <h2 class="text-2xl font-semibold mb-4 text-purple-800">Contacto</h2>
+      <ul class="space-y-2">
+        <li><strong>Email:</strong> <a href="mailto:leonelexequielvincent@gmail.com" class="text-purple-600 hover:underline">leonelexequielvincent@gmail.com</a></li>
+        <li><strong>WhatsApp:</strong> <a href="https://wa.me/5491122512775" target="_blank" class="text-purple-600 hover:underline">+54 9 11 2251-2775</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/leonel-vincent-cabrera/" target="_blank" class="text-purple-600 hover:underline">linkedin.com/in/leonel-vincent-cabrera</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-sm bg-purple-800 text-white animate-fadeInUp">
+    <p>© 2025 Leonel Vincent Cabrera</p>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/5491122512775" target="_blank" class="fixed bottom-6 right-6 z-50">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="w-12 h-12">
+  </a>
+
+</body>
+</html>
